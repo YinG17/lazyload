@@ -1,0 +1,8 @@
+<ActionBar title="ALBUMS">
+    <NavigationButton [nsRouterLink]="['/dashboard/users']" android.systemIcon="ic_menu_back"></NavigationButton>
+</ActionBar>
+<ScrollView>
+    <StackLayout>
+        <Label *ngFor="let Album of ALbums" text="{{ Album.title }}" class="btn btn-primary"></Label>
+    </StackLayout>
+</ScrollView>

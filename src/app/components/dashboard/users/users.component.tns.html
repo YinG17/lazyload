@@ -1,0 +1,22 @@
+<ActionBar title="USERS">
+    <NavigationButton [nsRouterLink]="['/dashboard']" android.systemIcon="ic_menu_back"></NavigationButton>
+    <ActionItem [nsRouterLink]="['albums']" text="ALBUMS" android.position="popup"></ActionItem>
+    <ActionItem [nsRouterLink]="['todos']" text="TODOS" android.position="popup"></ActionItem>
+</ActionBar>
+
+<!-- <StackLayout *ngFor="let User of Users; let i = index">
+    <Label text="{{ User.username }}"></Label>
+</StackLayout> -->
+
+<!-- <TabView>
+    <StackLayout *tabItem="{title: 'ALBUMS'}">
+        <app-albums></app-albums>
+    </StackLayout>
+    <StackLayout *tabItem="{title: 'TODOS'}">
+        <app-todos></app-todos>
+    </StackLayout>
+</TabView> -->
+
+<StackLayout>
+    <page-router-outlet></page-router-outlet>
+</StackLayout>

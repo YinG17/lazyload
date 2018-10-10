@@ -1,0 +1,8 @@
+<ActionBar title="TODOS">
+    <NavigationButton [nsRouterLink]="['/dashboard/users']" android.systemIcon="ic_menu_back"></NavigationButton>
+</ActionBar>
+<ScrollView>
+    <StackLayout>
+        <Label *ngFor="let Todo of Todos" text="{{ Todo.title }}" class="btn btn-primary"></Label>
+    </StackLayout>
+</ScrollView>

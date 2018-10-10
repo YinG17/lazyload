@@ -1,0 +1,6 @@
+<div class="card col-md-5 mx-auto m-1" *ngFor="let Todo of Todos">
+  <div class="card-body">
+    <span *ngIf="Todo.completed" class="badge badge-success float-right"> Completed! </span>
+    <p> {{ Todo.title }}</p>
+  </div>
+</div>

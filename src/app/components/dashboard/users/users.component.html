@@ -1,0 +1,20 @@
+<div class="container">
+  <div>
+    <div class="col-md-4 users mb-5" *ngFor="let User of Users; let i = index">
+      <div class="card p-0">
+        <div class="card-header">
+          @{{ User.username }}
+        </div>
+        <div class="card-body" style="height: 250px; padding: 0;">
+          <div class="image">
+
+          </div>
+        </div>
+        <div class="card-footer">
+          <a [routerLink]="[ 'albums']" class="btn btn-success">ALBUMS</a>
+          <a [routerLink]="[ 'todos']" class="btn btn-warning">TODOS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

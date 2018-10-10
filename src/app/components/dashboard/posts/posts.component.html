@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="col-md-12 mb-3" *ngFor="let Post of Posts">
+    <div class="card">
+      <div class="card-header">
+        <b> {{ Post.title }}</b>
+        <span class="float-right">Post by: </span>
+      </div>
+      <div class="card-body">
+        <div innerHtml="<p>{{ Post.body }}</p>"></div>
+        <hr>
+        <div>
+          Comments :
+          <div class="col-md-10 mx-auto ">
+            <app-comments id="{{ Post.id }}"></app-comments>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div *ngFor="let Comment of Comments; let i = index">
+  <div *ngIf="Comment.postId == id">
+    <p>
+      <span class="float-left"> <b> {{Comment.email}} </b> : {{ Comment.body }}</span>
+    </p>
+  </div>
+</div>
